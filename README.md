@@ -44,7 +44,7 @@ sk_test_BQokikJOvBiI2HlWgH4olfQ2
 ## Installation without composer:
 
 - Unzip the respective extension zip and then merge "packages" and "storage" folders into project root directory.
-- Goto config/app.php file and add following line under 'providers'
+- To ensure that your custom shipping method package is properly integrated into the Bagisto application, you need to register your service provider. This can be done by adding it to the `bootstrap/providers.php` file in the Bagisto root directory.
 
 ```
 Webkul\Stripe\Providers\StripeServiceProvider::class,
@@ -79,4 +79,4 @@ sk_test_BQokikJOvBiI2HlWgH4olfQ2
 > That's it, now just execute the project on your specified domain.
 
 ## How to contribute
-Stripe Payment Gateway is always open for direct contributions. Contributions can be in the form of design suggestions, documentation improvements, new component suggestions, code improvements, adding new features or fixing problems. For more information please check our [Contribution Guideline document.](https://github.com/codenteq/stripe-payment-gateway/blob/master/CONTRIBUTING.md)
+Stripe Payment Gateway is always open for direct contributions. Contributions can be in the form of design suggestions, documentation improvements, new component suggestions, code improvements, adding new features or fixing problems. For more information please check our [Contribution Guideline document.](https://codenteq.com/contributor-covenant-code-of-conduct/)
