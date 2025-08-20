@@ -3,7 +3,6 @@
 namespace Webkul\Stripe\Payment;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Checkout\Facades\Cart;
 use Webkul\Payment\Payment\Payment;
 
 class Stripe extends Payment
