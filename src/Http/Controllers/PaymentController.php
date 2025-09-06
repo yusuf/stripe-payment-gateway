@@ -82,6 +82,16 @@ class PaymentController extends Controller
         return redirect()->route('shop.checkout.onepage.success');
     }
 
+    public function failure()
+    {
+        // EITHER show a cancel page:
+        // return view('shop::checkout.onepage.cancel');
+
+        // OR redirect back to cart with a message:
+        session()->flash('warning', 'Card payment was cancelled. You can try again or choose another method.');
+        return redirect()->route('shop.checkout.onepage.index'); // or onepage.index
+    }
+
     /**
      * Prepares order's invoice data for creation.
      */
